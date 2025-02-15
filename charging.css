@@ -1,0 +1,54 @@
+body { 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+    background-color: black;
+  }
+.battery 
+{   
+      position: relative; 
+      width: 200px;  
+      height: 100px;
+      border: 3px solid #333;  
+      border-radius: 10px;
+      display: flex;  
+      align-items: center;
+      justify-content: center;
+    }
+.battery-level {   
+     width: 100%; 
+     height: 100%; 
+     border-radius: 3px;  
+     animation: charging 8s infinite    
+    }
+.battery-cap 
+{    position: absolute;   
+     right: -20px; 
+     width: 20px; 
+     height: 40px; 
+     background-color: #333;  
+     border-radius: 2px;
+    }
+
+
+@keyframes charging 
+{       
+   0%{ 
+       background: red;   
+       width: 0%; 
+   }  
+  25%{ 
+       background: orangered;  
+}   
+ 50%{ 
+       background: yellowgreen;        
+     }   
+ 75%{ 
+     background: greenyellow; 
+ }  
+ 100%{ 
+      background: greenyellow;   
+ }
+}
+
